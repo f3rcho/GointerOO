@@ -20,3 +20,11 @@ func (e *Employee) GetId() int {
 }
 
 ```
+
+## Interfaces
+Go does not implement interfaces explicit, just implicit.
+```go
+  type PrintInfo interface {
+    getMessage() string
+  }
+``` 

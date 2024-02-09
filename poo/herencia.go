@@ -22,7 +22,7 @@ func (p Employee) SayHello() {
 	fmt.Printf("Hi, I am a %s and my name is %s \n", p.Position, p.Name)
 }
 
-func main() {
+func main2() {
 	me := Person{Id: 666, Name: "Fernando", Age: 34}
 	developer := Employee{
 		Person:   Person{Id: 123, Name: "Adan", Age: 4},
