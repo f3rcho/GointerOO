@@ -15,6 +15,15 @@ type Employee struct {
 	ManagerID int
 }
 
+// NewEmployee creates a new Employee struct and returns a pointer to it.
+func NewEmployee(id int, name string, salary int) *Employee {
+	return &Employee{
+		ID:     id,
+		Name:   name,
+		Salary: salary,
+	}
+}
+
 func (e *Employee) SetId(id int) {
 	e.ID = id
 }
@@ -45,6 +54,9 @@ func main() {
 	e.SetName("Jane555")
 	fmt.Println(e.GetName())
 	fmt.Println(e.GetId())
+
+	employee := NewEmployee(666, "Fernando", 120000)
+	fmt.Printf("%v\n", *employee)
 }
 
 // func main() {

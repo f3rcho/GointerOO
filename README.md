@@ -1,7 +1,7 @@
 ## Receiver function
 
 ```go
-  type Employee struct {
+type Employee struct {
 	ID        int
 	Name      string
 	Address   string
