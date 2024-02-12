@@ -55,7 +55,7 @@ func getNoticationFactory(notificationType string) (INotificationFactory, error)
 	if notificationType == "Email" {
 		return &EmailNotification{}, nil
 	}
-	return nil, fmt.Errorf("No notification type")
+	return nil, fmt.Errorf("Not notification type")
 }
 
 func sendNotification(f INotificationFactory) {
