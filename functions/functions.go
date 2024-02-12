@@ -5,7 +5,7 @@ import (
 	"time"
 )
 
-func main() {
+func main2() {
 	// anon functions
 	x := 5
 	y := func() int {
