@@ -28,3 +28,9 @@ Go does not implement interfaces explicit, just implicit.
     getMessage() string
   }
 ``` 
+
+## go mod tidy
+Remove unused dependencies
+```go
+	go mod tidy
+```
