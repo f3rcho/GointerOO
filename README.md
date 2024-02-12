@@ -69,3 +69,18 @@ Get coverage pretty as html
 ```go
 	go tool cover -html=coverage.out
 ```
+
+## Profiling
+Testing performance
+```go
+	go test -cpuprofile=pro.out
+```
+this command generate an binary output.
+
+Reading the binary above:
+```go
+	go tool pprof pro.out
+```
+-> top, to list
+-> list Fibonnacci, to see details
+-> web o pdf, to generate a web view o export as pdf

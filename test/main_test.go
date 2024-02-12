@@ -44,3 +44,20 @@ func TestMax(t *testing.T) {
 		}
 	}
 }
+func TestFib(t *testing.T) {
+	table := []struct {
+		a        int
+		expected int
+	}{
+		{1, 1},
+		{8, 21},
+		{50, 12586269025},
+	}
+
+	for _, test := range table {
+		result := Fibonnacci(test.a)
+		if result != test.expected {
+			t.Error("Fib Expected:", test.expected, "got:", result)
+		}
+	}
+}
