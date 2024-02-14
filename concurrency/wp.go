@@ -4,7 +4,7 @@ import (
 	"fmt"
 )
 
-func main() {
+func main6() {
 	tasks := []int{2, 3, 8, 9, 10, 30, 50}
 	numWorkers := 3
 	jobs := make(chan int, len(tasks))

@@ -84,3 +84,11 @@ Reading the binary above:
 -> top, to list
 -> list Fibonnacci, to see details
 -> web o pdf, to generate a web view o export as pdf
+
+## Concurrency
+
+### waitGroupo
+### semaforos
+### workerpools
+### pipelines
+### multiplexation
