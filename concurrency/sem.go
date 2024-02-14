@@ -6,7 +6,7 @@ import (
 	"time"
 )
 
-func main() {
+func main4() {
 	c := make(chan int, 2)
 	var wg sync.WaitGroup
 
