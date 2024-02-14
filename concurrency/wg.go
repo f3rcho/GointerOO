@@ -6,17 +6,17 @@ import (
 	"time"
 )
 
-func main() {
+func main3() {
 	var wg sync.WaitGroup
 	for i := 0; i < 10; i++ {
 		wg.Add(1)
-		go doSomething(i, &wg)
+		go doSomething2(i, &wg)
 	}
 
 	wg.Wait()
 }
 
-func doSomething(u int, wg *sync.WaitGroup) {
+func doSomething2(u int, wg *sync.WaitGroup) {
 	defer wg.Done()
 
 	fmt.Printf("doSomething %d\n", u)
