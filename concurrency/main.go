@@ -25,7 +25,7 @@ import "fmt"
 // 	ConsumeNumbers(ch)
 // }
 
-func main() {
+func main2() {
 	ch := make(chan string, 3) // Create a buffered channel with capacity 3
 
 	go func() {
