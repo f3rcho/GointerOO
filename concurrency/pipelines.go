@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-func main() {
+func main5() {
 	generator := make(chan int)
 	doubles := make(chan int)
 
